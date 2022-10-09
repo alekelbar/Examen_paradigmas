@@ -13,7 +13,7 @@
        77 WKS-operando-1   pic 9(5).
        77 WKS-operando-2   pic 9(5).
        77 WKS-result       pic 9(5).
-       77 wks-operacion    pic A(01).
+       77 wks-operacion    pic A(1).
        77 wks-opcion       pic 9(01).
                       
       *TIENE TODAS LAS INSTRUCCIONES PARA LLEVAR A CABO EL PROGRAMA...
@@ -29,10 +29,9 @@
                perform 00001-pedir-datos
                perform 00002-realizar-operacion
            else 
-           if wks-opcion = 2
                next sentence
-           else 
-               display "Not an option!".
+               display "Gus bay!".
+               
        00001-pedir-datos.
            display "Este programa es una calculadora!".
            display "Capture el primer operando: ".
@@ -40,7 +39,7 @@
            display "Capture el segundo operando: ".
            accept WKS-operando-2.
            display "Inserte la operación: ".
-           accept wks-opcion.
+           accept wks-operacion.
 
        00002-realizar-operacion.
            if wks-operacion = "s"

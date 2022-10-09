@@ -21,3 +21,23 @@ Instrucciones: Desarrollar los siguientes procedimientos en los siguientes lengu
 >2. Escriba un método que nos permita sumar matrices.
 >3. Implemente un método que nos permita multiplicar matrices.
 >4. Cree un método con el que se obtenga la traspuesta de una matriz.
+
+
+### Implementación resultante.
+
+Dentro de la carpeta include podra encontrar la documentación adecuada tanto para las funciones del
+ejercicio #1, como la definición de la clase template de una matriz. <br/>
+Por otro lado, en la carpera SRC podra encontrar un ejemplo del programa ejecutando:<br/>
+
+`❯ g++ *.cpp -o ./../bin/main` 
+`╰─ ./../bin/main --test` 
+<br/>
+
+En cuanto a cobol, en la carpeta COBOl, encontrara los programas homologos a los contruidos en c++
+pero con algo menos de estilo, por lo cual me disculpo. Podra ejecutarlos de la siguiente manera: <br/>
+
+`cobc -x ex2.cbl`
+`./ex{k}` 
+<hr>
+
+- NOTE: Altere K para cambiar los ejercicios, cada código fuente trae instrucciones por si mismas, y cada carpeta BIN cuenta con ejecutables simplemente para facilitar algunos aspectos.
